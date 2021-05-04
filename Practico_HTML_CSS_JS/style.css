@@ -1,0 +1,47 @@
+
+.formulario{
+    background-color: rgba(26, 58, 199, 0.568);
+    font-family: fantasy;
+    max-width: 400px;
+    margin-left: 1%;
+    
+}
+
+input.ipersonal {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#edad{
+    max-width: 60px;
+}
+
+#todo{
+    max-width: 425px;
+    max-height: 800px;
+    border-style:groove;
+    border-radius: 3%;
+    margin: auto; 
+}
+
+button.botones {
+    color: white;
+    background-color: green;
+}
+
+button.submit {
+    color: white;
+    background-color: green;
+}
+
+.iadicional{
+    border-style:groove;
+    border-color: black;
+
+}
+
+#ipersonal{
+    border-style: groove;
+    border-color: black;
+}
+
+
