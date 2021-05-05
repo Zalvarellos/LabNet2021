@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src="practica.js"></script>
-    
+    <style>
+        #edad{
+            max-width: 60px;
+            border-style: groove;
+            border-color: black;
+        }
+    </style>
+
     <title>Formulario</title>
 </head>
 <body>
@@ -15,43 +22,46 @@
                      
         <p>Completa tus datos.</p>
 
-        <form action="" method="GET" name="form" class='formulario' onsubmit="return validarNombre();">
-            <div id="ipersonal">
+        <form action="" method="GET" name="form" class='formulario' style="width: 400px;">
+            <div class="ipersonal">
                 <p>Informacion personal:</p>
                 <label for="nombre">
                     Nombre:
                 </label>
                 <br>
-                <input id="nombre" name="nombre" type="text" placeholder="Escriba su nombre" value="" class="ipersonal">
+                <input id="nombre" name="nombre" type="text" placeholder="Escriba su nombre" value="" class="ipersonal validacionFormulario">
                 <br>
                 <label for="apellido">
                     Apellido:
                 </label>
                 <br>
-                <input id="apellido" name="apellido" type="text" placeholder="Escriba su apellido" value="" class="ipersonal">
+                <input id="apellido" name="apellido" type="text" placeholder="Escriba su apellido" value="" class="ipersonal validacionFormulario">
                 <br>
                 <label for="edad">
                     Edad:
                 </label>
                 <br>
-                <input id="edad" name="edad" type="number" placeholder="Edad" max="99" min="18" value="" class="ipersonal">
+                <input id="edad" name="edad" type="number" placeholder="Edad" max="99" min="18" value="" >
                 <br>
                 <br>
-                <input type="radio" id="masculino" name="genero" checked>
-                <label for="masculino">Masculino</label>
-                <br>
+                <div class="radioInput">
+                    <input type="radio" id="masculino" name="genero" checked>
+                    <label for="masculino">Masculino</label>
+                    <br>
 
-                <input type="radio" id="femenino" name="genero">
-                <label for="femenino">Femenino</label>
-                <br>
+                    <input type="radio" id="femenino" name="genero">
+                    <label for="femenino">Femenino</label>
+                    <br>
 
-                <input type="radio" id="otres" name="genero">
-                <label for="otros">Otros</label>
+                    <input type="radio" id="otres" name="genero">
+                    <label for="otros">Otros</label>
+                </div>
+                
             </div>
             <br>
 
             <br>
-            <div class="iadicional">
+            <div class="ipersonal">
                 <p>Informacion adicional:</p>
                 <label for="empresa">
                     Empresa:
@@ -60,7 +70,7 @@
             </div>
             <br>
             <button type="submit" class="submit">Enviar</button>
-            <button type="reset" value="limpiarFormulario" class="botones">Borrar todo</button>
+            <button type="button" value="limpiarFormulario" class="botonReset">Borrar todo</button>
         </form>
     </div>
 </body>

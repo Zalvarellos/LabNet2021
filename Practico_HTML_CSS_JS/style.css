@@ -2,17 +2,12 @@
 .formulario{
     background-color: rgba(26, 58, 199, 0.568);
     font-family: fantasy;
-    max-width: 400px;
     margin-left: 1%;
     
 }
 
 input.ipersonal {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#edad{
-    max-width: 60px;
 }
 
 #todo{
@@ -23,7 +18,7 @@ input.ipersonal {
     margin: auto; 
 }
 
-button.botones {
+button.botonReset {
     color: white;
     background-color: green;
 }
@@ -33,13 +28,7 @@ button.submit {
     background-color: green;
 }
 
-.iadicional{
-    border-style:groove;
-    border-color: black;
-
-}
-
-#ipersonal{
+.ipersonal{
     border-style: groove;
     border-color: black;
 }
