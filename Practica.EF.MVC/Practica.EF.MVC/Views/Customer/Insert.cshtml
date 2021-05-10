@@ -1,0 +1,20 @@
+﻿@model Practica.EF.MVC.Models.CustomerView
+@{
+    ViewBag.Title = "Customers Page";
+}
+
+<h1>Añadir un cliente:</h1>
+
+@using (Html.BeginForm("Insert", "Customer", FormMethod.Post))
+{
+    <label> Id (Alfanumérico): </label> @Html.TextBoxFor(c => c.Id)
+    <br />
+    <label>Nombre:</label> @Html.TextBoxFor(c => c.Nombre)
+    <br />
+    <label>Empresa:</label> @Html.TextBoxFor(c => c.Empresa)
+    <br />
+    <label>Telefono:</label> @Html.TextBoxFor(c => c.Contacto)
+    <br />
+
+    <input type="submit" class="btn btn-success" value="Agregar" />
+}
