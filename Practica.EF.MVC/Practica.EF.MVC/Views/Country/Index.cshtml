@@ -1,0 +1,23 @@
+﻿@model List<Practica.EF.Entities.Country>
+@{
+    Layout = null;
+}
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var country in Model)
+        {
+            <tr>
+                <th scope="row">@country.name</th>
+            </tr>
+        }
+    </tbody>
+
+</table>
