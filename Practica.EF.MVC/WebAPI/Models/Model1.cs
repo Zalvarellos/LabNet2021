@@ -1,0 +1,25 @@
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
+using System.Linq;
+
+namespace WebAPI.Models
+{
+    public partial class Model1 : DbContext
+    {
+        public Model1()
+            : base("name=ModeloClientes")
+        {
+        }
+
+        public virtual DbSet<Categories> Categories { get; set; }
+        public virtual DbSet<Customers> Customers { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Customers>()
+                .Property(e => e.CustomerID)
+                .IsFixedLength();
+        }
+    }
+}
