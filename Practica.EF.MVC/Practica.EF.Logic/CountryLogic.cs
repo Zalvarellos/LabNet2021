@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Practica.EF.Entities;
 
@@ -14,7 +11,7 @@ namespace Practica.EF.Logic
     {
         public List<Country> GetPaises()
         {
-            var request = (HttpWebRequest)WebRequest.Create("https://restcountries.eu/rest/v2/all");
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://restcountries.eu/rest/v2/all");
 
             request.Method = "GET";
 
