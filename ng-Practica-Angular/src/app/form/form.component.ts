@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormBuilder, FormGroup } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -14,8 +14,8 @@ export class FormComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.fb.group({
-      nombre: [''],
-      descripcion: ['']
+      nombre: new FormControl('', Validators.required),
+      descripcion: new FormControl('', Validators.required)
     });
   }
 

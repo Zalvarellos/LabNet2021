@@ -1,0 +1,16 @@
+<table class="tabla">
+  <h1>Lista de Categorias</h1>
+  <tr>
+    <td>id</td>
+    <td>nombre</td>
+    <td>descripcion</td>
+  </tr>
+
+  <tr *ngFor="let array of respuesta">
+    <td>{{array.CategoryID}}</td>
+    <td>{{array.CategoryName}}</td>
+    <td>{{array.Description}}</td>
+  </tr>
+</table>
+
+
